@@ -46,15 +46,7 @@ const disableLetterButton = (buttonEl) => {
 // It should return `true` if `letter` is in the word
 // For now, you should test it out to make sure it works
 
-const isLetterInWord = (letter) => {
-  const letterDiv = document.querySelector(`.${letter}`);
-  // let allDivs = createDivsForChars(WORDS);
-  // for (const oneDiv of allDivs) {
-  //   if (letterDiv == allDivs) {
-  //     return true;
-  //   }
-  // }
-};
+const isLetterInWord = (letter) => document.querySelector(`div.${letter}`) !== null;
 
 // This is like if __name__ == '__main__' in Python
 // It will be called when the file is run (because
